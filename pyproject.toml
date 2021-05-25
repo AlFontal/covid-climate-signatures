@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "covid_climate_signatures"
+version = "0.1.0"
+description = "Code and analysis for the manuscript 'Climatic signatures in the different COVID-19 pandemic waves across both hemispheres'"
+authors = ["Alejandro Fontal <alejandrofontal92@gmail.com>"]
+license = "BSD-3-Clause"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.2.4"
+numpy = "^1.20.3"
+plotnine = "^0.8.0"
+geopandas = "^0.9.0"
+xarray = "^0.18.2"
+atmos = {git = "https://github.com/atmos-python/atmos.git", rev = "develop"}
+scikit-learn = "^0.24.2"
+tqdm = "^4.61.0"
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
