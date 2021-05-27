@@ -17,6 +17,8 @@ tqdm = "^4.61.0"
 cdsapi = "^0.5.1"
 MetPy = "^1.0.1"
 atmos = "^0.2.6"
+sdcpy = "^0.2.2"
+openpyxl = "^3.0.7"
 
 [tool.poetry.dev-dependencies]
 jupyter = "^1.0.0"
