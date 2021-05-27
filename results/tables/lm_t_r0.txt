@@ -1,0 +1,20 @@
+                 Results: Ordinary least squares
+=================================================================
+Model:              OLS              Adj. R-squared:     0.204   
+Dependent Variable: r0               AIC:                92.6581 
+Date:               2021-05-27 12:33 BIC:                98.8333 
+No. Observations:   162              Log-Likelihood:     -44.329 
+Df Model:           1                F-statistic:        42.24   
+Df Residuals:       160              Prob (F-statistic): 9.76e-10
+R-squared:          0.209            Scale:              0.10247 
+------------------------------------------------------------------
+               Coef.   Std.Err.     t     P>|t|    [0.025   0.975]
+------------------------------------------------------------------
+Intercept      1.9680    0.0547  35.9947  0.0000   1.8600   2.0760
+temperature   -0.0174    0.0027  -6.4995  0.0000  -0.0227  -0.0121
+-----------------------------------------------------------------
+Omnibus:              2.336        Durbin-Watson:           1.674
+Prob(Omnibus):        0.311        Jarque-Bera (JB):        2.197
+Skew:                 0.205        Prob(JB):                0.333
+Kurtosis:             2.604        Condition No.:           44   
+=================================================================
