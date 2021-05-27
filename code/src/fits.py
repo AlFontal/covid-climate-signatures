@@ -4,8 +4,6 @@ import pandas as pd
 import plotnine as p9
 from scipy.optimize import curve_fit
 from sklearn.linear_model import LinearRegression
-from tqdm.auto import tqdm
-import statsmodels.formula.api as smf
 
 
 def exponential(t: int, r: float, x0: float) -> float:
