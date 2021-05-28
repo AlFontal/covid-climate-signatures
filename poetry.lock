@@ -32,6 +32,14 @@ docs = ["sphinx"]
 tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pytest"]
 
 [[package]]
+name = "asteval"
+version = "0.9.23"
+description = "Safe, minimalistic evaluator of python expression using ast module"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "async-generator"
 version = "1.10"
 description = "Async generators and context managers for Python 3.5+"
@@ -248,6 +256,14 @@ all = ["pytest (>=3)", "pytest-cov", "shapely", "boto3 (>=1.2.4)", "mock"]
 calc = ["shapely"]
 s3 = ["boto3 (>=1.2.4)"]
 test = ["pytest (>=3)", "pytest-cov", "boto3 (>=1.2.4)", "mock"]
+
+[[package]]
+name = "future"
+version = "0.18.2"
+description = "Clean single-source support for Python 3 and 2"
+category = "main"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
 name = "geopandas"
@@ -509,6 +525,20 @@ description = "A fast implementation of the Cassowary constraint solver"
 category = "main"
 optional = false
 python-versions = ">=3.6"
+
+[[package]]
+name = "lmfit"
+version = "1.0.2"
+description = "Least-Squares Minimization with Bounds and Constraints"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+asteval = ">=0.9.16"
+numpy = ">=1.16"
+scipy = ">=1.2"
+uncertainties = ">=3.0.1"
 
 [[package]]
 name = "markupsafe"
@@ -1251,6 +1281,23 @@ ipython-genutils = "*"
 test = ["pytest"]
 
 [[package]]
+name = "uncertainties"
+version = "3.1.5"
+description = "Transparent calculations with uncertainties on the quantities involved (aka error propagation); fast calculation of derivatives"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+future = "*"
+
+[package.extras]
+all = ["numpy", "sphinx", "nose"]
+docs = ["sphinx"]
+optional = ["numpy"]
+tests = ["nose", "numpy"]
+
+[[package]]
 name = "urllib3"
 version = "1.26.4"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
@@ -1325,7 +1372,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pyt
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "1137fc88bcb6837dc91a0585b6c09e6d8f227dbaca31c2bc88511aecc26107fa"
+content-hash = "acf8c254275eb7b5b0460d2bab514acd0588a42a6d77930931f5d45262980523"
 
 [metadata.files]
 appdirs = [
@@ -1355,6 +1402,9 @@ argon2-cffi = [
     {file = "argon2_cffi-20.1.0-cp38-cp38-win_amd64.whl", hash = "sha256:9dfd5197852530294ecb5795c97a823839258dfd5eb9420233c7cfedec2058f2"},
     {file = "argon2_cffi-20.1.0-cp39-cp39-win32.whl", hash = "sha256:e2db6e85c057c16d0bd3b4d2b04f270a7467c147381e8fd73cbbe5bc719832be"},
     {file = "argon2_cffi-20.1.0-cp39-cp39-win_amd64.whl", hash = "sha256:8a84934bd818e14a17943de8099d41160da4a336bcc699bb4c394bbb9b94bd32"},
+]
+asteval = [
+    {file = "asteval-0.9.23.tar.gz", hash = "sha256:f5096a924b1d2f147e70327245d95fc8f534dbe94277b6828ce2a8c049d3a438"},
 ]
 async-generator = [
     {file = "async_generator-1.10-py3-none-any.whl", hash = "sha256:01c7bf666359b4967d2cda0000cc2e4af16a0ae098cbffcb8472fb9e8ad6585b"},
@@ -1478,6 +1528,9 @@ fiona = [
     {file = "Fiona-1.8.19-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:6155f3be8ba00591898b1cdde06bef20901b25a4d3c2b4cf842c278a5169e65a"},
     {file = "Fiona-1.8.19.tar.gz", hash = "sha256:b9059e0b29c2e9e6b817e53f941e77e1aca7075f986005d38db307067b60458f"},
 ]
+future = [
+    {file = "future-0.18.2.tar.gz", hash = "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"},
+]
 geopandas = [
     {file = "geopandas-0.9.0-py2.py3-none-any.whl", hash = "sha256:79f6e557ba0dba76eec44f8351b1c6b42a17c38f5f08fef347e98fe4dae563c7"},
     {file = "geopandas-0.9.0.tar.gz", hash = "sha256:63972ab4dc44c4029f340600dcb83264eb8132dd22b104da0b654bef7f42630a"},
@@ -1580,6 +1633,9 @@ kiwisolver = [
     {file = "kiwisolver-1.3.1-pp36-pypy36_pp73-manylinux2010_x86_64.whl", hash = "sha256:33449715e0101e4d34f64990352bce4095c8bf13bed1b390773fc0a7295967b3"},
     {file = "kiwisolver-1.3.1-pp36-pypy36_pp73-win32.whl", hash = "sha256:401a2e9afa8588589775fe34fc22d918ae839aaaf0c0e96441c0fdbce6d8ebe6"},
     {file = "kiwisolver-1.3.1.tar.gz", hash = "sha256:950a199911a8d94683a6b10321f9345d5a3a8433ec58b217ace979e18f16e248"},
+]
+lmfit = [
+    {file = "lmfit-1.0.2.tar.gz", hash = "sha256:67090ce56685cf7f92bd7358a1e7d4ad862b3758988109ec440e9825e5184b45"},
 ]
 markupsafe = [
     {file = "MarkupSafe-2.0.1-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:f9081981fe268bd86831e5c75f7de206ef275defcb82bc70740ae6dc507aee51"},
@@ -2151,6 +2207,10 @@ tqdm = [
 traitlets = [
     {file = "traitlets-5.0.5-py3-none-any.whl", hash = "sha256:69ff3f9d5351f31a7ad80443c2674b7099df13cc41fc5fa6e2f6d3b0330b0426"},
     {file = "traitlets-5.0.5.tar.gz", hash = "sha256:178f4ce988f69189f7e523337a3e11d91c786ded9360174a3d9ca83e79bc5396"},
+]
+uncertainties = [
+    {file = "uncertainties-3.1.5-py2.py3-none-any.whl", hash = "sha256:9c031773afa85e4bc8067f3be257c718eb7dbef7dffd604aeb315ded85c9c325"},
+    {file = "uncertainties-3.1.5.tar.gz", hash = "sha256:9122c1e7e074196883b4a7a946e8482807b2f89675cb5e3798b87e0608ede903"},
 ]
 urllib3 = [
     {file = "urllib3-1.26.4-py2.py3-none-any.whl", hash = "sha256:2f4da4594db7e1e110a944bb1b551fdf4e6c136ad42e4234131391e21eb5b0df"},
