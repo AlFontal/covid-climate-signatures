@@ -181,6 +181,18 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
+name = "covid19dh"
+version = "2.3.0"
+description = "Unified data hub for a better understanding of COVID-19 https://covid19datahub.io"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pandas = "*"
+requests = "*"
+
+[[package]]
 name = "cycler"
 version = "0.10.0"
 description = "Composable style cycles"
@@ -1372,7 +1384,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pyt
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "acf8c254275eb7b5b0460d2bab514acd0588a42a6d77930931f5d45262980523"
+content-hash = "6d284b0089f2efaaaf1983622dcfff033bf8ed73cc010aaaa073f5d3f6c30865"
 
 [metadata.files]
 appdirs = [
@@ -1491,6 +1503,10 @@ cligj = [
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
+]
+covid19dh = [
+    {file = "covid19dh-2.3.0-py3-none-any.whl", hash = "sha256:fd75c22a8778ff1129a52b0d0f0384cb035a4ff4f612e0d7a7a142ae9a22e733"},
+    {file = "covid19dh-2.3.0.tar.gz", hash = "sha256:c3b2720d53494b15178fdf0f2589e70ea9bc73fbf1af429a412eb7fb1bc0da78"},
 ]
 cycler = [
     {file = "cycler-0.10.0-py2.py3-none-any.whl", hash = "sha256:1d8a5ae1ff6c5cf9b93e8811e581232ad8920aeec647c37316ceac982b08cb2d"},

@@ -20,6 +20,7 @@ atmos = "^0.2.6"
 sdcpy = "^0.2.2"
 openpyxl = "^3.0.7"
 lmfit = "^1.0.2"
+covid19dh = "^2.3.0"
 
 [tool.poetry.dev-dependencies]
 jupyter = "^1.0.0"
