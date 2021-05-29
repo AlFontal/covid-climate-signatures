@@ -1,3 +1,6 @@
+# Simplified and slightly modularized from:
+# https://github.com/LeonardoL87/SARS-CoV-2-Model-with-and-without-temperature-dependence
+
 import pickle
 import datetime
 
