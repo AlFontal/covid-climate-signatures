@@ -1,4 +1,4 @@
-[![DOI:10.1038/s43588-021-00136-6](http://img.shields.io/badge/DOI-10.1101/10.1038/s43588-021-00136-6-B31B1B.svg)](https://doi.org/10.1038/s43588-021-00136-6)
+[![DOI:10.1038/s43588-021-00136-6](https://img.shields.io/badge/DOI-10.1038/s43588.021.00136.6-B31B1B.svg)](https://doi.org/10.1038/s43588-021-00136-6)
 
 # Climatic signatures in the COVID19 pandemic
 
